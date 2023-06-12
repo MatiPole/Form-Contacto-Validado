@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Matias Poletto</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+   
+      <section class="contact-us" id="contacto">
+        <form
+          id="contactForm"
+          action="thank-you.html"
+          autocomplete="on"
+          method="GET"
+          novalidate
+        >
+          <div class="div-contacto">
+            <h1 class="h3-contacto">CONTACTO</h1>
+          </div>
+          <div class="form-control">
+            <label for="name">Nombre: <span> *</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              maxlength="30"
+              placeholder="Su nombre aquí"
+            />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <label for="lastname">Apellido: <span> *</span></label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              required
+              minlength="2"
+              maxlength="30"
+              placeholder="Su apellido aquí"
+            />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email:<span> *</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="test@mail.com"
+            />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <label for="phone">Teléfono:<span> *</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="1123456789"
+            />
+            <small class="error-message"></small>
+          </div>
+          <div class="form-control">
+            <label for="comments">Mensaje:<span> *</span></label>
+            <textarea
+              name="comments"
+              id="comments"
+              required
+              minlength="50"
+              cols="10"
+              rows="10"
+              placeholder="Coloque aquí su mensaje"
+            ></textarea>
+            <small class="error-message"></small>
+          </div>
+          <input type="submit" id="submit" value="Enviar" />
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/script.js" defer></script>
+  </body>
+</html>

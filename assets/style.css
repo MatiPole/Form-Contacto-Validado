@@ -1,0 +1,197 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Calibre";
+  font-weight: 200;
+  src: url("font/calibre/calibrelight-webfont.woff2") format("woff2"),
+    url("font/calibre/calibrelight-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Calibre";
+  font-weight: 400;
+  src: url("font/calibre/calibreregular-webfont.woff2") format("woff2"),
+    url("font/calibre/calibreregular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Calibre";
+  font-weight: 800;
+  src: url("font/calibre/calibrebold-webfont.woff2") format("woff2"),
+    url("font/calibre/calibrebold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Calibre";
+  font-weight: 600;
+  src: url("font/calibre/calibresemibold-webfont.woff2") format("woff2"),
+    url("font/calibre/calibresemibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("font/montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800&display=swap");
+
+:root {
+  --dark-navy: #020c1b;
+  --navy: #0b1e3b;
+  --light-navy: #112240;
+  --lightest-navy: #233554;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --dark-slate: #495670;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --white: #e6f1ff;
+  --green: #64ffda;
+  --fucsia: #cc3b84;
+  --card-width: 436px;
+  --card-heigth: 283px;
+  --ff-montserrat: "Montserrat";
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 5rem);
+}
+
+/* CONTACTO */
+label {
+  font-family: var(--ff-montserrat);
+  font-weight: 300;
+}
+label span {
+  color: rgb(238, 54, 54) !important ;
+}
+
+.aviso {
+  color: aliceblue;
+}
+
+.obligatorio {
+  color: rgb(194, 18, 18);
+}
+
+.h3-contacto {
+  font-family: var(--ff-montserrat);
+  font-weight: 300;
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+  text-decoration: underline 2px var(--green);
+  text-underline-offset: 15px;
+  letter-spacing: 5px;
+  width: fit-content;
+  padding: 8px;
+}
+
+.div-contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark-slate);
+}
+
+.contact-us form {
+  padding: 3rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us form select,
+.contact-us form textarea {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: none;
+  font-family: var(--ff-montserrat);
+}
+
+.contact-us form input {
+  padding: 0.75rem;
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--green);
+  outline: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: var(--ff-montserrat);
+}
+
+.contact-us form input::placeholder {
+  color: rgb(206, 206, 206);
+  font-family: var(--ff-montserrat);
+}
+
+.contact-us form #submit {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--fucsia);
+  color: #fff;
+  font-weight: bold;
+  margin-block: 1rem;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+.contact-us form #submit:hover {
+  background-color: #f55ca9;
+}
+
+.contact-us form label {
+  padding-top: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+/* validacion */
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+  border-bottom: 2px solid rgb(223, 36, 36);
+}
+
+.form-control.success input,
+.form-control.success textarea {
+  border-bottom: 2px solid rgb(1, 187, 1);
+}
+
+.form-control small {
+  display: none;
+  color: rgb(223, 36, 36);
+  padding-top: 5px;
+}
+
+.form-control.error small {
+  display: block;
+}
+
+.aviso {
+  font-family: var(--ff-montserrat);
+  font-style: italic;
+  color: #999;
+}
